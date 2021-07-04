@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<!-- saved from url=(0028)https://javarush.ipnodns.ru/ -->
+<html class="" lang="ru"><script type="text/javascript" async="" src="./javarush.ipnodns.ru_files/watch.js.download"></script><script data-dapp-detection="">
+(function() {
+  let alreadyInsertedMetaTag = false
+
+  function __insertDappDetected() {
+    if (!alreadyInsertedMetaTag) {
+      const meta = document.createElement('meta')
+      meta.name = 'dapp-detected'
+      document.head.appendChild(meta)
+      alreadyInsertedMetaTag = true
+    }
+  }
+
+  if (window.hasOwnProperty('web3')) {
+    // Note a closure can't be used for this var because some sites like
+    // www.wnyc.org do a second script execution via eval for some reason.
+    window.__disableDappDetectionInsertion = true
+    // Likely oldWeb3 is undefined and it has a property only because
+    // we defined it. Some sites like wnyc.org are evaling all scripts
+    // that exist again, so this is protection against multiple calls.
+    if (window.web3 === undefined) {
+      return
+    }
+    __insertDappDetected()
+  } else {
+    var oldWeb3 = window.web3
+    Object.defineProperty(window, 'web3', {
+      configurable: true,
+      set: function (val) {
+        if (!window.__disableDappDetectionInsertion)
+          __insertDappDetected()
+        oldWeb3 = val
+      },
+      get: function () {
+        if (!window.__disableDappDetectionInsertion)
+          __insertDappDetected()
+        return oldWeb3
+      }
+    })
+  }
+})()</script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<title>План / InfoJavaRush</title>
+	<meta name="description" content="Description your site">
+	<meta name="keywords" content="java, обучение java, курсы java, программирование, обучение программированию, курсы java киев, обучение java в киеве">
+	<link rel="stylesheet" type="text/css" href="./javarush.ipnodns.ru_files/9114cb7848c17b8a381b15a08d5d2477.css">
+	<link href="https://javarush.ipnodns.ru/res/javarush.ico" rel="shortcut icon">
+	<style>
+			#container, .container {
+				min-width: 976px;
+				max-width: 1170px;
+			}
+			#header-first-line, #header-second-line, #header-third-line, #header-fourth-line, #footer-first-line, #footer-second-line {
+				min-width: 976px;
+			}
+	</style>
+</head>
+<body>
+	<div id="container" class="branding" style=" ">
+	
+	<center>
+		<br>
+		<h3>По вопросам стажировки и обучения обращайтесь к <a href="http://vaizman.ru/">Вайзман АИ</a></h3>
+	</center>
+		<div id="wrapper" class="no-sidebar clearfix">           
+          <div id="content-wrapper">
+			<div id="content" role="main">
+				<div class="topic">
+					<div class="topic-content text">
+						<img src="./javarush.ipnodns.ru_files/5cc275a2c8.gif" align="right" alt=""><h4>План обучения:</h4>
+							<ol>
+								<li><a target="_blank" href="https://javarush.ipnodns.ru/lesson/lect1.html">Знакомство с Java: вывод на экран, типы String и int</a></li>
+								<li><a target="_blank" href="https://javarush.ipnodns.ru/lesson/lect2.html">Знакомство с Java: переменные, методы, классы</a></li> 
+								<li><a target="_blank" href="https://javarush.ipnodns.ru/lesson/lect3.html">Первая программа: ввод с клавиатуры, работа в IDE</a></li>
+								<li><a target="_blank" href="https://javarush.ipnodns.ru/lesson/lect4.html">Знакомство с ветвлениями и циклами</a></li>
+								<li><a target="_blank" href="https://javarush.ipnodns.ru/lesson/lect5.html">Знакомство с классами: написание своих классов, конструкторы</a></li>
+								<li><a target="_blank" href="https://javarush.ipnodns.ru/lesson/lect6.html">Знакомство с объектами: написание своих объектов, время жизни, статические переменные</a></li>
+								<li><a target="_blank" href="https://javarush.ipnodns.ru/lesson/lect7.html">Массивы и списки: Array, ArrayList, знакомство с Generics</a></li>
+								<li><a target="_blank" href="https://javarush.ipnodns.ru/lesson/lect8.html">Коллекции: LinkedList, HashSet, HashMap. Date - дата.</a></li>
+								<li><a target="_blank" href="https://javarush.ipnodns.ru/lesson/lect9.html">Знакомство с исключениями: try, catch, throws, multy-catch.</a></li>
+								<li><a target="_blank" href="https://javarush.ipnodns.ru/lesson/lect10.html">Приведение примитивных типов: расширение и сужение.</a></li>
+								<li><a target="_blank" href="https://javarush.ipnodns.ru/lesson/lect11.html">Основы ООП: основные принципы, наследование, инкапсуляция.</a></li>
+								<li><a target="_blank" href="https://javarush.ipnodns.ru/lesson/lect12.html">Основы ООП: перегрузка, полиморфизм, абстракция, интерфейсы.</a></li>
+								<li><a target="_blank" href="https://javarush.ipnodns.ru/lesson/lect13.html">Интерфейсы: сравнение с абстрактным классом, множественное наследование.</a></li>
+								<li><a target="_blank" href="https://javarush.ipnodns.ru/lesson/lect14.html">Приведение типов, instanceof. Большая задача на интерфейсы.</a></li>
+								<li><a target="_blank" href="https://javarush.ipnodns.ru/lesson/lect15.html">Перегрузка методов, особенность вызова конструкторов</a></li>
+								<li><a target="_blank" href="https://javarush.ipnodns.ru/lesson/lect16.html">Знакомство с нитями: Thread, Runnable, start, join, interrupt, sleep</a></li>
+								<li><a target="_blank" href="https://javarush.ipnodns.ru/lesson/lect17.html">Знакомство с нитями: synchronized, volatile, yield</a></li>
+								<li><a target="_blank" href="https://javarush.ipnodns.ru/lesson/lect18.html">Знакомство с потоками: InputStream/OutputStream, FileInputStream, FileOutputStream</a></li>
+								<li><a target="_blank" href="https://javarush.ipnodns.ru/lesson/lect19.html">Знакомство с потоками: Reader/Writer, FileReader/FileWriter</a></li> 
+								<li><a target="_blank" href="https://javarush.ipnodns.ru/lesson/lect20.html">Сериализация</a></li>
+								<li><a target="_blank" href="https://javarush.ipnodns.ru/lesson/lect21.html">Устройство объекта Object: equals, hashCode, clone, wait, notify, toString(),...</a></li>
+								<li><a target="_blank" href="https://javarush.ipnodns.ru/lesson/lect22.html">String: mutable, immutable, format, StringTokenizer, StringBuilder, StringBuffer</a></li>
+								<li><a target="_blank" href="https://javarush.ipnodns.ru/lesson/lect23.html">Внутренние классы, примеры: Map.Entry</a></li>
+								<li><a target="_blank" href="https://javarush.ipnodns.ru/lesson/lect24.html">Внутренние классы, особенности реализации</a></li> 
+								<li><a target="_blank" href="https://javarush.ipnodns.ru/lesson/lect25.html">Создание и остановка нитей: start, interrupt, sleep, yield.</a></li>
+								<li><a target="_blank" href="https://javarush.ipnodns.ru/lesson/lect26.html">Совместный доступ к монопольным данным: synchronized, volatile</a></li> 
+								<li><a target="_blank" href="https://javarush.ipnodns.ru/lesson/lect27.html">DeadLock. Wait, notify, notifyAll</a></li>
+								<li><a target="_blank" href="https://javarush.ipnodns.ru/lesson/lect28.html">ThreadGroup, ThreadLocal, Executor, ExecutorService, Callable</a></li>
+								<li><a target="_blank" href="https://javarush.ipnodns.ru/lesson/lect29.html">Autoboxing, особенности реализации</a></li>
+								<li><a target="_blank" href="https://javarush.ipnodns.ru/lesson/lect30.html">Операторы: числовые, логические и бинарные</a></li>
+								<li><a target="_blank" href="https://javarush.ipnodns.ru/lesson/lect31.html">Работа с файлами и архивами</a></li>
+								<li><a target="_blank" href="https://javarush.ipnodns.ru/lesson/lect32.html">RMI и динамический прокси</a></li>
+								<li><a target="_blank" href="https://javarush.ipnodns.ru/lesson/lect33.html">JSON, JavaScript</a></li>
+								<li><a target="_blank" href="https://javarush.ipnodns.ru/lesson/lect34.html">Рекурсия. Сборка мусора и типы ссылок в Java. Логгирование</a></li>
+								<li><a target="_blank" href="https://javarush.ipnodns.ru/lesson/lect35.html">Создаем первое веб приложение. Работа с Tomcat и Idea</a></li>
+								<li><a target="_blank" href="https://javarush.ipnodns.ru/lesson/lect36.html">Основные паттерны для создания веб приложений. Углубленное изучение коллекций</a></li>
+								<li><a target="_blank" href="https://javarush.ipnodns.ru/lesson/lect37.html">Паттерны проектирования. Утилитные классы Arrays. Collections</a></li>
+								<li><a target="_blank" href="https://javarush.ipnodns.ru/lesson/lect38.html">Методологии разработки. Аннотации в Java. Иерархия исключений</a></li>
+								<li><a target="_blank" href="https://javarush.ipnodns.ru/lesson/lect39.html">Системы контроля версий: Git и SVN. Generics</a></li>
+								<li><a target="_blank" href="https://javarush.ipnodns.ru/lesson/lect40.html">URI, URL. REST сервисы. Создаем свое клиент-серверное приложение.</a></li>
+							</ol>
+						</div>
+					</div>
+				</div> 
+			</div>  
+		</div>
+	</div>
+
+
+<!-- Yandex.Metrika counter --><script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter33220118 = new Ya.Metrika({ id:33220118, clickmap:true, trackLinks:true, accurateTrackBounce:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="https://mc.yandex.ru/watch/33220118" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
+
+</body></html>
